@@ -126,45 +126,30 @@ tr:hover td {
     line-height: 60px;
 }
 
-#popupButton {
-    display: block;
-    width: 150px;
-    height: 40px;
-    border: none;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    gap: 10px;
-    margin-top: 15px;
-    margin-left: 30px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.popup {
+input[type="file"] {
     display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 200px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    z-index: 9999;
 }
 
-.popup-content {
-    text-align: center;
-}
-
-.popup-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
+label {
+    display: inline-block;
+    text-transform: uppercase;
     color: white;
-    border: none;
-    border-radius: 4px;
+    background: black;
+    text-align: center;
+    padding: 15px 40px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    user-select: none;
     cursor: pointer;
+    margin-top: 10px;
+    margin-left: 13.7px;
+}
+
+label i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+label:active {
+    transform: scale(0.9);
 }

@@ -17,12 +17,12 @@
             </div>
             <div class="import-btn">
                 <input type="file" id="file">
-                <label for="file"><i class="fas fa-file"></i>Import</label>
+                <label for="file"><i class="fas fa-file"></i>&nbsp;Import</label>
             </div>
         </div>
         <div class="main">
             <div class="table_header">
-                <p>History</p>
+                <p>Activity History</p>
             </div>
             <div class="table_section">
                 <table>
@@ -46,12 +46,14 @@
                             <td>Charle</td>
                             <td>September 15, 2022</td>
                             <td>December 1, 2022</td>
-                            <td></td>
+                            <td>
+                                <input type="text">
+                            </td>
                             <td>1</td>
                             <td>message</td>
                             <td>
-                                <button><i class="fa fa-file-pdf"></i>Export</button>
-                                <button class="delete-btn" onclick="deleteRow(this)"><i class="	fa fa-trash">Delete</i></button>
+                                <button class="export-btn">Export</button>
+                                <button class="delete-btn" onclick="deleteRow(this)">Delete</button>
                             </td>
                         </tr>
                     </tbody>

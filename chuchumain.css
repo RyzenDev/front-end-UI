@@ -61,9 +61,13 @@ body {
     cursor: pointer;
 }
   
-  .search-bar button i {
+.search-bar button i {
     color: #fff;
     font-size: 18px;
+}
+
+.search-bar button i:active {
+    transform: scale(0.9);
 }
 
 .main {

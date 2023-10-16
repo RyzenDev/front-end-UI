@@ -15,6 +15,10 @@
                 <input type="text" placeholder="Search...">
                 <button><i class="fas fa-search"></i></button>
             </div>
+            <div class="import-btn">
+                <input type="file" id="file">
+                <label for="file"><i class="fas fa-file"></i>Import</label>
+            </div>
         </div>
         <div class="main">
             <div class="table_header">
@@ -24,148 +28,45 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>File No.</th>
                             <th>File Name</th>
-                            <th>File Type</th>
-                            <th>Date Modified</th>
+                            <th>Created by</th>
+                            <th>Last Modified by</th>
+                            <th>Created Date</th>
+                            <th>Last Modified Date</th>
+                            <th>Tags</th>
+                            <th>Version Number</th>
+                            <th>Version Notes</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
+                            <td>Test</td>
                             <td>Mc2</td>
-                            <td>PDF</td>
-                            <td>10/15/2022</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Charle</td>
+                            <td>September 15, 2022</td>
+                            <td>December 1, 2022</td>
+                            <td></td>
+                            <td>1</td>
+                            <td>message</td>
+                            <td>
+                                <button><i class="fa fa-file-pdf"></i>Export</button>
+                                <button class="delete-btn" onclick="deleteRow(this)"><i class="	fa fa-trash">Delete</i></button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-        <div id="sidebar">
-            <div class="content">
-                <header>Menu</header>
-                <input type="file" id="file">
-                <label for="file"><i class="fas fa-file"></i>Import</label>    
-            </div>
-        </div>
     </div>
+
+
 <script>
-   
-    
+    function deleteRow(btn) {
+      var row = btn.parentNode.parentNode;
+      row.parentNode.removeChild(row);
+    }  
 </script>
+
 </body>
 </html>

@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open another_chuchu.html",
+            "file": "c:\\Users\\Robert Madlos\\OneDrive\\Desktop\\DTS\\front-end-UI\\another_chuchu.html"
+        }
+    ]
+}
